@@ -160,8 +160,8 @@ $endif$
 \hypersetup{
   pdfinfo={
     Author={$for(author)$$author$$sep$ \and $endfor$},
-    Title={$title$},
-    Keywords={\tags}
+    Title={$title$}$if(tags)$,
+    Keywords={\tags}$endif$
   }
 }
 
@@ -191,7 +191,7 @@ $endif$
 \titleformat{\subsection}
   {\normalfont\bfseries}{}{0em}{}%Last two commands remove numbers from sections. Necessary to get titlesec to play nice with hyperref (--number-sections nec in pandoc). 0em for spacing from left side.
 
-
+\usepackage{booktabs}
 
 $if(title)$
 \title{$title$ \\ \small --- Handout --- $if(date)$ $date$ $endif$}
@@ -220,6 +220,9 @@ $endif$
   \item\relax
 }
 {\endlist}
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 \begin{document}
 

@@ -145,10 +145,10 @@ $include-after$
 
 $endfor$
 
-\closing{Sincerely yours, \\
-\fromsig{\includegraphics[width=5cm]{sig.png}} \\
-\fromname{David Sanson}
-}
+% \closing{Sincerely yours, \\
+% \fromsig{\includegraphics[width=5cm]{sig.png}} \\
+% \fromname{David Sanson}
+% }
 
 \end{letter}
 

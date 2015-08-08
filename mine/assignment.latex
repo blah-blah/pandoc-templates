@@ -176,8 +176,8 @@ $endif$
 \hypersetup{
   pdfinfo={
     Author={$for(author)$$author$$sep$ \and $endfor$},
-    Title={$title$},
-    Keywords={\tags}
+    Title={$title$}$if(tags)$,
+    Keywords={\tags}$endif$
   }
 }
 
@@ -231,6 +231,8 @@ $if(author)$
 \makebox[\textwidth]{Name:\enspace\rule{2 in}{1pt}\hfill}
 $endif$
 
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
 $body$
 

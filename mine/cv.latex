@@ -164,6 +164,12 @@ $endif$
 
 %\renewcommand{\arraystretch}{-.1}
 
+%%%%%%%%%%%% My additions %%%%%%%%
+
+%\usepackage{enumitem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
